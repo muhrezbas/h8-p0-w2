@@ -35,12 +35,25 @@ WHILE "Jumlah Pakaian" <= 20
 
 DISPLAY value of "Jumlah Pakaian"
 
+Simpan nilai "Panjang Kuku" dengan isi panjang atau tidak panjang
+Simpan nilai "Guru Memeriksa" dengan angka 0
+Ulangi step 2 selama "Guru memeriksa" masih dibawah sama dengan 40. jika "Guru memeriksa" sudah 40. maka akan berakhir pada akhir kondisi jika.
+Jika "Panjang Kuku  = (sama dengan) "Panjang", maka cetak ("Guru akan menghukum siswa/siswi tersebut"), agar semakin mendekati batas perulangan. kembali step 2.
+Sebaliknya
+Jika tidak memenuhi kondisi di atas, cetak("Guru akan memuji siswa/siswi tersebut")agar semakin mendekati batas perulangan. kembali step 2.
+
+STORE "Panjang Kuku" with "panjang" or "tidak panjang"
 STORE "Guru Memeriksa" with 0
 
 WHILE "Guru Memeriksa" <= 40
- if "Guru Memeriksa"
+ if "Panjang Kuku" is "panjang"
+ then DO "Guru akan menghukum siswa/siswi tersebut"
+ ELSE
+ then DO "Guru akan memuji siswa/siswi tersebut"
 
-DISPLAY value of "Jumlah Pakaian"
+
+
+
 
 
 
