@@ -1,1 +1,46 @@
-tesss
+STORE "Massa Benda" with any value
+STORE "Percepatan Benda" with any value
+STORE "Resultan Gaya" without any value
+
+CALCULATE "Massa Benda" times "Percepatan Benda"
+SET "Resultan Gaya" value with calculation Result
+
+DISPLAY "Resultan Gaya"
+
+
+Masukkan (tahun)
+Jika sisa pembagian (tahun dibagi 4) = (sama dengan) 0 dan sisa pembagian (tahun dibagi 100) != (tidak sama dengan) 0, maka cetak (Tahun Kabisat)
+Sebaliknya
+Jika sisa pembagian (tahun dibagi 4) = (sama dengan) 0 dan sisa pembagian (tahun dibagi 100) = (sama dengan) 0 dan sisa pembagian (tahun dibagi 400) = (sama dengan) 0, maka cetak (tahun kabisat)
+sebaliknya
+Jika tidak memenuhi semua kondisi di atas, cetak(“Bukan tahun kabisat”)
+
+STORE "tahun" with any value
+IF "tahun" modulo 4 is 0 && "tahun" modulo 100 is not 0
+then DO "Tahun Kabisat"
+ELSE IF "tahun" modulo 4 is 0 && "tahun" modulo 100 is 0 && "tahun" modulo 400 is 0 
+then DO "Tahun Kabisat"
+ELSE
+then DO "Bukan Tahun Kabisat"
+
+Simpan nilai "Jumlah Pakaian" dengan angka 0
+Ulangi step 2 selama "Jumlah Pakaian" masih dibawah sama dengan 20. jika "Jumlah Pakaian" sudah 20, lanjut ke step 4.
+Tambah "Jumlah Pakaian" dengan 1, agar semakin mendekati batas perulangan. kembali step 2.
+Tampilkan "Jumlah Pakaian", angka 20 akan keluar
+
+STORE "Jumlah Pakaian" with 0
+
+WHILE "Jumlah Pakaian" <= 20
+  ADD "Jumlah Pakaian" by 1
+
+DISPLAY value of "Jumlah Pakaian"
+
+STORE "Guru Memeriksa" with 0
+
+WHILE "Guru Memeriksa" <= 40
+ if "Guru Memeriksa"
+
+DISPLAY value of "Jumlah Pakaian"
+
+
+
