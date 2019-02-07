@@ -1,45 +1,50 @@
 var hari = 1;
-var bulan = 7;
+var bulan = 12;
 var tahun = 1996;
 var namaBulan= "";
 
 switch(bulan) {
-  case 0:
+  case 1:
     namaBulan = 'Januari';
     break;
-  case 1:
+  case 2:
     namaBulan = 'Februari';
     break;  
-  case 2:
+  case 3:
  namaBulan = 'Maret';
     break;  
-    case 3:
+    case 4:
  namaBulan = 'April';
     break;  
-  case 4:
+  case 5:
  namaBulan = 'Mei';
     break;  
-  case 5:
+  case 6:
  namaBulan = 'Juni';
     break;  
-  case 6:
+  case 7:
  namaBulan = 'Juli';
     break;  
-  case 7:
+  case 8:
  namaBulan = 'Agustus';
     break;  
-    case 8:
+    case 9:
  namaBulan = 'Oktober';
     break;  
-    case 9:
+    case 10:
  namaBulan = 'September';
     break;  
-    case 10:
+    case 11:
  namaBulan = 'November';
     break;  
-    case 11:
+    case 12:
  namaBulan = 'Desember';
     break;  
+    default:  console.log('Tidak ada bulan pada angka ' + bulan); 
 
 }
-console.log( hari + " " + namaBulan + " " + tahun);
+if(namaBulan != ''){
+console.log( hari + " " + namaBulan + " " + tahun);}
+else {
+  console.log('')
+}
